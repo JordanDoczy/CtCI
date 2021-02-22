@@ -12,14 +12,14 @@ class Chapter3StackMin {
     static func test() -> Bool {
         
         var s = StackWithMin<Int>()
-        s.push(Node(data: 10))
-        s.push(Node(data: 1))
-        s.push(Node(data: 12))
-        s.push(Node(data: 8))
-        s.push(Node(data: 10))
-        s.push(Node(data: 9))
-        s.push(Node(data: 2))
-        s.push(Node(data: 3))
+        s.push(LinkedNode(data: 10))
+        s.push(LinkedNode(data: 1))
+        s.push(LinkedNode(data: 12))
+        s.push(LinkedNode(data: 8))
+        s.push(LinkedNode(data: 10))
+        s.push(LinkedNode(data: 9))
+        s.push(LinkedNode(data: 2))
+        s.push(LinkedNode(data: 3))
         
 //        while s.isEmpty == false {
 //            _ = s.pop()
@@ -67,7 +67,7 @@ struct StackWithMin<T: Hashable & Comparable>: StackProtocol {
         return value
     }
     
-    mutating func push(_ node: Node<T>) {
+    mutating func push(_ node: LinkedNode<T>) {
         if minValues.isEmpty {
             minValues.push(node)
         }
@@ -75,7 +75,7 @@ struct StackWithMin<T: Hashable & Comparable>: StackProtocol {
         values.push(node)
         
         if(node.data < minimum!) {
-            let copy = Node(data: node.data)
+            let copy = LinkedNode(data: node.data)
             minValues.push(copy)
         }
     }

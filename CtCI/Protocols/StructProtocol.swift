@@ -12,7 +12,7 @@ protocol StackProtocol {
 
     var isEmpty: Bool { get }
     
-    mutating func push(_ node: Node<T>)
+    mutating func push(_ node: LinkedNode<T>)
     mutating func pop() -> T?
     func peek() -> T?
 }

@@ -9,7 +9,7 @@ import Foundation
 
 struct Stack<T: Hashable & Comparable & Equatable>: StackProtocol {
 
-    private var top: Node<T>?
+    private var top: LinkedNode<T>?
     
     var isEmpty: Bool {
         return top == nil
@@ -29,7 +29,7 @@ struct Stack<T: Hashable & Comparable & Equatable>: StackProtocol {
         return data
     }
     
-    mutating func push(_ node: Node<T>) {
+    mutating func push(_ node: LinkedNode<T>) {
         let next = top
         top = node
         top!.next = next

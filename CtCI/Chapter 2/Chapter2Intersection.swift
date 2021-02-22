@@ -9,13 +9,13 @@ import Foundation
 
 class Chapter2Intersection {
     
-    static func isIntersection(a: Node<Int>, b: Node<Int>) -> Node<Int>? {
+    static func isIntersection(a: LinkedNode<Int>, b: LinkedNode<Int>) -> LinkedNode<Int>? {
         
-        var aNode: Node<Int>? = a
-        var bNode: Node<Int>? = b
+        var aNode: LinkedNode<Int>? = a
+        var bNode: LinkedNode<Int>? = b
         
-        var aEnd: Node<Int>?
-        var bEnd: Node<Int>?
+        var aEnd: LinkedNode<Int>?
+        var bEnd: LinkedNode<Int>?
         
         var aLength = 0
         var bLength = 0
@@ -61,18 +61,18 @@ class Chapter2Intersection {
     
     
     // time = O(a*b), space = O(a+b)
-    static func isIntersectionBruteForce(a: Node<Int>, b: Node<Int>) -> Node<Int>? {
+    static func isIntersectionBruteForce(a: LinkedNode<Int>, b: LinkedNode<Int>) -> LinkedNode<Int>? {
         
-        var aItems: [Node<Int>] = []
-        var bItems: [Node<Int>] = []
+        var aItems: [LinkedNode<Int>] = []
+        var bItems: [LinkedNode<Int>] = []
         
-        var aNode: Node<Int>? = a
+        var aNode: LinkedNode<Int>? = a
         while aNode != nil { // O(a)
             aItems.append(aNode!)
             aNode = aNode?.next
         }
         
-        var bNode: Node<Int>? = b
+        var bNode: LinkedNode<Int>? = b
         while bNode != nil { // O(b)
             bItems.append(bNode!)
             bNode = bNode?.next
@@ -90,17 +90,17 @@ class Chapter2Intersection {
     }
     
     // time = O(a+b), space = O(a)
-    static func isIntersectionHash(a: Node<Int>, b: Node<Int>) -> Node<Int>? {
+    static func isIntersectionHash(a: LinkedNode<Int>, b: LinkedNode<Int>) -> LinkedNode<Int>? {
         
-        var aItems: [Node<Int>:Int] = [:]
+        var aItems: [LinkedNode<Int>:Int] = [:]
         
-        var aNode: Node<Int>? = a
+        var aNode: LinkedNode<Int>? = a
         while aNode != nil {
             aItems[aNode!] = 1
             aNode = aNode?.next
         }
         
-        var bNode: Node<Int>? = b
+        var bNode: LinkedNode<Int>? = b
         while bNode != nil {
             if aItems[bNode!] != nil {
                 return bNode
@@ -112,21 +112,21 @@ class Chapter2Intersection {
     }
     
     static func test() -> Bool {
-        let intersect = Node(data: -99)
-        intersect.next = Node(data: -100)
-        intersect.next!.next = Node(data: -101)
+        let intersect = LinkedNode(data: -99)
+        intersect.next = LinkedNode(data: -100)
+        intersect.next!.next = LinkedNode(data: -101)
         
-        let a = Node(data: 0)
-        a.next = Node(data: 1)
-        a.next!.next = Node(data: 2)
+        let a = LinkedNode(data: 0)
+        a.next = LinkedNode(data: 1)
+        a.next!.next = LinkedNode(data: 2)
         a.next!.next!.next = intersect
         print("a= \(a.getStringValue(useTime: false))")
         
-        let b = Node(data: 9)
-        b.next = Node(data: 10)
-        b.next!.next = Node(data: 11)
-        b.next!.next!.next = Node(data: 12)
-        b.next!.next!.next!.next = Node(data: 13)
+        let b = LinkedNode(data: 9)
+        b.next = LinkedNode(data: 10)
+        b.next!.next = LinkedNode(data: 11)
+        b.next!.next!.next = LinkedNode(data: 12)
+        b.next!.next!.next!.next = LinkedNode(data: 13)
         b.next!.next!.next!.next!.next = intersect
         print("b= \(b.getStringValue(useTime: false))")
         

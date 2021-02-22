@@ -41,7 +41,7 @@ struct ShelterQueue {
     mutating func enqueue(_ entry: Animal) {
         
         let time = Int(mach_absolute_time())
-        let node = Node(data: ShelterEntry(animal: entry, time: time))
+        let node = LinkedNode(data: ShelterEntry(animal: entry, time: time))
         
         switch (entry.type) {
         case .cat: catQueue.add(node)

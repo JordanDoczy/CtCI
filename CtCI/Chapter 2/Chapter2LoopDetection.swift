@@ -9,10 +9,10 @@ import Foundation
 
 class Chapter2LoopDetection {
 
-    static func hasLoopHash(_ node: Node<Int>) -> Node<Int>? {
+    static func hasLoopHash(_ node: LinkedNode<Int>) -> LinkedNode<Int>? {
         
-        var map: [Node<Int>:Int] = [:]
-        var n: Node<Int>? = node
+        var map: [LinkedNode<Int>:Int] = [:]
+        var n: LinkedNode<Int>? = node
         
         while n != nil {
             if map[n!] != nil {
@@ -25,10 +25,10 @@ class Chapter2LoopDetection {
         return nil
     }
     
-    static func hasLoop(_ node: Node<Int>) -> Node<Int>? {
+    static func hasLoop(_ node: LinkedNode<Int>) -> LinkedNode<Int>? {
         
-        var slow: Node<Int>? = node
-        var fast: Node<Int>? = node
+        var slow: LinkedNode<Int>? = node
+        var fast: LinkedNode<Int>? = node
         
         while fast != nil && fast?.next != nil {
             slow = slow?.next
@@ -56,12 +56,12 @@ class Chapter2LoopDetection {
     
     static func test() -> Bool {
 
-        let item0 = Node(data: 0)
-        let item1 = Node(data: 1)
-        let item2 = Node(data: 2)
-        let item3 = Node(data: 3)
-        let item4 = Node(data: 4)
-        let item5 = Node(data: 5)
+        let item0 = LinkedNode(data: 0)
+        let item1 = LinkedNode(data: 1)
+        let item2 = LinkedNode(data: 2)
+        let item3 = LinkedNode(data: 3)
+        let item4 = LinkedNode(data: 4)
+        let item5 = LinkedNode(data: 5)
         
         item0.next = item1
         item1.next = item2

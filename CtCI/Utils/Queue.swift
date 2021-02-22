@@ -9,8 +9,8 @@ import Foundation
 
 struct Queue<T: Hashable & Comparable & Equatable>: QueueProtocol {
     
-    private var first: Node<T>?
-    private var last: Node<T>?
+    private var first: LinkedNode<T>?
+    private var last: LinkedNode<T>?
     
     var isEmpty: Bool {
         return first == nil
@@ -20,7 +20,7 @@ struct Queue<T: Hashable & Comparable & Equatable>: QueueProtocol {
         return first?.getStringValue() ?? ""
     }
     
-    mutating func add(_ node: Node<T>) {
+    mutating func add(_ node: LinkedNode<T>) {
         if first == nil {
             first = node
         }

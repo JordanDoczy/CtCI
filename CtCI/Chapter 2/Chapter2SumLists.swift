@@ -29,12 +29,12 @@ class Chapter2SumLists {
     // list = 1>0
     // 2+2+1 = 5
     // list = 1>0>5
-    static func sumLists(n: Node<Int>, m: Node<Int>) -> Node<Int> {
+    static func sumLists(n: LinkedNode<Int>, m: LinkedNode<Int>) -> LinkedNode<Int> {
                 
-        var nNode: Node<Int>? = n
-        var mNode: Node<Int>? = m
-        var result: Node<Int>? = nil
-        var resultHead: Node<Int>? = nil
+        var nNode: LinkedNode<Int>? = n
+        var mNode: LinkedNode<Int>? = m
+        var result: LinkedNode<Int>? = nil
+        var resultHead: LinkedNode<Int>? = nil
         var remainder = 0
         
         while nNode != nil || mNode != nil {
@@ -46,7 +46,7 @@ class Chapter2SumLists {
                 value -= 10
                 remainder = 1
             }
-            let node = Node(data: value)
+            let node = LinkedNode(data: value)
             if result == nil {
                 result = node
                 resultHead = node
@@ -60,22 +60,22 @@ class Chapter2SumLists {
         }
 
         if remainder == 1 {
-            result?.next = Node(data: 1)
+            result?.next = LinkedNode(data: 1)
         }
         
         return resultHead ?? n
     }
     
     static func test() -> Bool {
-        let left = Node(data: 5)
-        left.next = Node(data: 2)
-        left.next!.next = Node(data: 2)
+        let left = LinkedNode(data: 5)
+        left.next = LinkedNode(data: 2)
+        left.next!.next = LinkedNode(data: 2)
         print("left= \(left.getStringValue())")
         
-        let right = Node(data: 6)
-        right.next = Node(data: 7)
-        right.next!.next = Node(data: 2)
-        right.next!.next!.next = Node(data: 3)
+        let right = LinkedNode(data: 6)
+        right.next = LinkedNode(data: 7)
+        right.next!.next = LinkedNode(data: 2)
+        right.next!.next!.next = LinkedNode(data: 3)
         print("right= \(right.getStringValue())")
         
         let sum = sumLists(n: left, m: right)

@@ -1,5 +1,5 @@
 //
-//  Node.swift
+//  LinkedNode.swift
 //  CtCI
 //
 //  Created by Jordan Doczy on 2/18/21.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Node<T: Hashable & Comparable & Equatable> {
+class LinkedNode<T: Hashable & Comparable & Equatable> {
     
     internal let time: Int
     var data: T
-    var next: Node<T>?
+    var next: LinkedNode<T>?
     
     var stringValue: String {
         return getStringValue()
@@ -32,8 +32,8 @@ class Node<T: Hashable & Comparable & Equatable> {
         return result
     }
     
-    func getNode(at depth: Int) -> Node? {
-        var node: Node? = self
+    func getNode(at depth: Int) -> LinkedNode? {
+        var node: LinkedNode? = self
         
         for _ in 0..<depth {
             node = node?.next
@@ -44,35 +44,35 @@ class Node<T: Hashable & Comparable & Equatable> {
 
 }
 
-extension Node: Comparable {
-    static func < (lhs: Node<T>, rhs: Node<T>) -> Bool {
+extension LinkedNode: Comparable {
+    static func < (lhs: LinkedNode<T>, rhs: LinkedNode<T>) -> Bool {
         return lhs.data < rhs.data
     }
     
-    static func <= (lhs: Node<T>, rhs: Node<T>) -> Bool {
+    static func <= (lhs: LinkedNode<T>, rhs: LinkedNode<T>) -> Bool {
         return lhs.data <= rhs.data
     }
     
-    static func > (lhs: Node<T>, rhs: Node<T>) -> Bool {
+    static func > (lhs: LinkedNode<T>, rhs: LinkedNode<T>) -> Bool {
         return lhs.data > rhs.data
     }
     
-    static func >= (lhs: Node<T>, rhs: Node<T>) -> Bool {
+    static func >= (lhs: LinkedNode<T>, rhs: LinkedNode<T>) -> Bool {
         return lhs.data >= rhs.data
     }
 }
 
-extension Node: Equatable {
-    static func == (lhs: Node, rhs: Node) -> Bool {
+extension LinkedNode: Equatable {
+    static func == (lhs: LinkedNode, rhs: LinkedNode) -> Bool {
         lhs.data == rhs.data
     }
     
-    static func === (lhs: Node, rhs: Node) -> Bool {
+    static func === (lhs: LinkedNode, rhs: LinkedNode) -> Bool {
         lhs.time == rhs.time
     }
 }
 
-extension Node: Hashable {
+extension LinkedNode: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(data)
         hasher.combine(time)

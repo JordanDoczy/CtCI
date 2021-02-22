@@ -9,7 +9,7 @@ import Foundation
 
 class Chapter2ReturnKthToLast {
     
-    static func returnKthToLast(from node: Node<Int>, k: Int) -> Node<Int> {
+    static func returnKthToLast(from node: LinkedNode<Int>, k: Int) -> LinkedNode<Int> {
         
         // need to know the length of the node list
         // need to stop when I hit the "kth" node
@@ -22,10 +22,10 @@ class Chapter2ReturnKthToLast {
         //return doubleTraversal(from: node, k: k)
     }
     
-    static func doublePointer(from node: Node<Int>, k: Int) -> Node<Int> {
+    static func doublePointer(from node: LinkedNode<Int>, k: Int) -> LinkedNode<Int> {
         
-        var slow: Node<Int>? = node
-        var fast: Node<Int>? = node.getNode(at: k)
+        var slow: LinkedNode<Int>? = node
+        var fast: LinkedNode<Int>? = node.getNode(at: k)
         
         guard fast != nil else {
             return node
@@ -39,8 +39,8 @@ class Chapter2ReturnKthToLast {
         return slow ?? node
     }
     
-    static func doubleTraversal(from node: Node<Int>, k: Int) -> Node<Int> {
-        var n: Node<Int>? = node
+    static func doubleTraversal(from node: LinkedNode<Int>, k: Int) -> LinkedNode<Int> {
+        var n: LinkedNode<Int>? = node
         var counter = 0
         
         // iterate through the list and keep a counter
@@ -61,15 +61,15 @@ class Chapter2ReturnKthToLast {
     
     static func test() -> Bool {
         
-        let listNode = Node(data: 0)
-        listNode.next = Node(data: 1)
-        listNode.next!.next = Node(data: 2)
-        listNode.next!.next!.next = Node(data: 3)
-        listNode.next!.next!.next!.next = Node(data: 4)
-        listNode.next!.next!.next!.next!.next = Node(data: 3)
-        listNode.next!.next!.next!.next!.next!.next = Node(data: 5)
-        listNode.next!.next!.next!.next!.next!.next!.next = Node(data: 5)
-        listNode.next!.next!.next!.next!.next!.next!.next!.next = Node(data: 0)
+        let listNode = LinkedNode(data: 0)
+        listNode.next = LinkedNode(data: 1)
+        listNode.next!.next = LinkedNode(data: 2)
+        listNode.next!.next!.next = LinkedNode(data: 3)
+        listNode.next!.next!.next!.next = LinkedNode(data: 4)
+        listNode.next!.next!.next!.next!.next = LinkedNode(data: 3)
+        listNode.next!.next!.next!.next!.next!.next = LinkedNode(data: 5)
+        listNode.next!.next!.next!.next!.next!.next!.next = LinkedNode(data: 5)
+        listNode.next!.next!.next!.next!.next!.next!.next!.next = LinkedNode(data: 0)
         print("listNode= \(listNode.getStringValue())")
         // 0>1>2>3>4>3>5>5>0>
         

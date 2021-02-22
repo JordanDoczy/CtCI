@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60051EC25E4589900C9B4F4 /* Chapter4ListofDepths.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */; };
+		E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051F325E45D6600C9B4F4 /* GraphNode.swift */; };
+		E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */; };
 		E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684521425DC6D0D006959B4 /* CtCIApp.swift */; };
 		E684521725DC6D0D006959B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684521625DC6D0D006959B4 /* ContentView.swift */; };
 		E684521925DC6D10006959B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E684521825DC6D10006959B4 /* Assets.xcassets */; };
@@ -23,7 +26,7 @@
 		E687814025DD9E9F0022C45E /* Chapter1OneAway.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687813F25DD9E9F0022C45E /* Chapter1OneAway.swift */; };
 		E687814525DDAA640022C45E /* Chapter1StringCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687814425DDAA640022C45E /* Chapter1StringCompression.swift */; };
 		E687814A25DDAFB50022C45E /* Chapter1RotateMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687814925DDAFB50022C45E /* Chapter1RotateMatrix.swift */; };
-		E687815025DEA8020022C45E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687814F25DEA8020022C45E /* Node.swift */; };
+		E687815025DEA8020022C45E /* LinkedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687814F25DEA8020022C45E /* LinkedNode.swift */; };
 		E687815625DEA88F0022C45E /* Chapter2RemoveDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687815525DEA88F0022C45E /* Chapter2RemoveDuplicates.swift */; };
 		E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687815A25DEB0890022C45E /* Chapter2ReturnKthToLast.swift */; };
 		E687816025DEB85A0022C45E /* Chapter2DeleteMiddleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687815F25DEB85A0022C45E /* Chapter2DeleteMiddleNode.swift */; };
@@ -42,6 +45,11 @@
 		E6C2508E25E04FF2006DFC1D /* StructProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2508D25E04FF2006DFC1D /* StructProtocol.swift */; };
 		E6C2509325E0511B006DFC1D /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2509225E0511B006DFC1D /* QueueProtocol.swift */; };
 		E6C2509825E05A62006DFC1D /* Chapter3AnimalShelter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2509725E05A62006DFC1D /* Chapter3AnimalShelter.swift */; };
+		E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250A025E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift */; };
+		E6C250A925E17DC8006DFC1D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250A825E17DC8006DFC1D /* Graph.swift */; };
+		E6C250AE25E1949D006DFC1D /* Chapter4MinimalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */; };
+		E6C250B325E196CF006DFC1D /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250B225E196CF006DFC1D /* TreeNode.swift */; };
+		E6C250B825E1EA04006DFC1D /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250B725E1EA04006DFC1D /* TreeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4ListofDepths.swift; sourceTree = "<group>"; };
+		E60051F325E45D6600C9B4F4 /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
+		E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 		E684521125DC6D0D006959B4 /* CtCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CtCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E684521425DC6D0D006959B4 /* CtCIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CtCIApp.swift; sourceTree = "<group>"; };
 		E684521625DC6D0D006959B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +95,7 @@
 		E687813F25DD9E9F0022C45E /* Chapter1OneAway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1OneAway.swift; sourceTree = "<group>"; };
 		E687814425DDAA640022C45E /* Chapter1StringCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1StringCompression.swift; sourceTree = "<group>"; };
 		E687814925DDAFB50022C45E /* Chapter1RotateMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1RotateMatrix.swift; sourceTree = "<group>"; };
-		E687814F25DEA8020022C45E /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		E687814F25DEA8020022C45E /* LinkedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedNode.swift; sourceTree = "<group>"; };
 		E687815525DEA88F0022C45E /* Chapter2RemoveDuplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2RemoveDuplicates.swift; sourceTree = "<group>"; };
 		E687815A25DEB0890022C45E /* Chapter2ReturnKthToLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2ReturnKthToLast.swift; sourceTree = "<group>"; };
 		E687815F25DEB85A0022C45E /* Chapter2DeleteMiddleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2DeleteMiddleNode.swift; sourceTree = "<group>"; };
@@ -103,6 +114,11 @@
 		E6C2508D25E04FF2006DFC1D /* StructProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructProtocol.swift; sourceTree = "<group>"; };
 		E6C2509225E0511B006DFC1D /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 		E6C2509725E05A62006DFC1D /* Chapter3AnimalShelter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3AnimalShelter.swift; sourceTree = "<group>"; };
+		E6C250A025E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Chapter4RouteBetweenNodes.swift; path = "CtCI/Chapter 3/Chapter4RouteBetweenNodes.swift"; sourceTree = SOURCE_ROOT; };
+		E6C250A825E17DC8006DFC1D /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4MinimalTree.swift; sourceTree = "<group>"; };
+		E6C250B225E196CF006DFC1D /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		E6C250B725E1EA04006DFC1D /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,14 +170,15 @@
 			isa = PBXGroup;
 			children = (
 				E684521425DC6D0D006959B4 /* CtCIApp.swift */,
-				E684521625DC6D0D006959B4 /* ContentView.swift */,
 				E684521825DC6D10006959B4 /* Assets.xcassets */,
 				E684521D25DC6D10006959B4 /* Info.plist */,
+				E6C250BC25E1EA0C006DFC1D /* Views */,
 				E6C2508C25E04FD1006DFC1D /* Protocols */,
 				E687814E25DEA7B60022C45E /* Utils */,
 				E684524225DC6DBD006959B4 /* Chapter 1 */,
 				E687815425DEA85C0022C45E /* Chapter 2 */,
 				E6C2506A25E01409006DFC1D /* Chapter 3 */,
+				E6C2509F25E17D7A006DFC1D /* Chapter 4 */,
 				E684521A25DC6D10006959B4 /* Preview Content */,
 			);
 			path = CtCI;
@@ -213,9 +230,12 @@
 		E687814E25DEA7B60022C45E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E687814F25DEA8020022C45E /* Node.swift */,
-				E687818025E011CB0022C45E /* Stack.swift */,
+				E6C250A825E17DC8006DFC1D /* Graph.swift */,
 				E6C2507325E01651006DFC1D /* Queue.swift */,
+				E687818025E011CB0022C45E /* Stack.swift */,
+				E60051F325E45D6600C9B4F4 /* GraphNode.swift */,
+				E687814F25DEA8020022C45E /* LinkedNode.swift */,
+				E6C250B225E196CF006DFC1D /* TreeNode.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -255,6 +275,26 @@
 				E6C2509225E0511B006DFC1D /* QueueProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E6C2509F25E17D7A006DFC1D /* Chapter 4 */ = {
+			isa = PBXGroup;
+			children = (
+				E6C250A025E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift */,
+				E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */,
+				E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */,
+			);
+			path = "Chapter 4";
+			sourceTree = "<group>";
+		};
+		E6C250BC25E1EA0C006DFC1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E684521625DC6D0D006959B4 /* ContentView.swift */,
+				E6C250B725E1EA04006DFC1D /* TreeView.swift */,
+				E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,11 +430,13 @@
 				E6C2507425E01651006DFC1D /* Queue.swift in Sources */,
 				E6C2508E25E04FF2006DFC1D /* StructProtocol.swift in Sources */,
 				E684524425DC6DE9006959B4 /* Chapter1IsUnique.swift in Sources */,
-				E687815025DEA8020022C45E /* Node.swift in Sources */,
+				E687815025DEA8020022C45E /* LinkedNode.swift in Sources */,
 				E687813125DD6F800022C45E /* Chapter1ReplaceSpaces.swift in Sources */,
 				E6C2507925E021DB006DFC1D /* Chapter3StackMin.swift in Sources */,
 				E687816525DEBB080022C45E /* Chapter2Partition.swift in Sources */,
 				E684521725DC6D0D006959B4 /* ContentView.swift in Sources */,
+				E60051EC25E4589900C9B4F4 /* Chapter4ListofDepths.swift in Sources */,
+				E6C250B825E1EA04006DFC1D /* TreeView.swift in Sources */,
 				E687814A25DDAFB50022C45E /* Chapter1RotateMatrix.swift in Sources */,
 				E687816F25DF000E0022C45E /* Chapter2Palindrome.swift in Sources */,
 				E6C2507E25E0353C006DFC1D /* Chapter3SetofStacks.swift in Sources */,
@@ -404,16 +446,22 @@
 				E6C2508825E04FB4006DFC1D /* Chapter3SortedStack.swift in Sources */,
 				E687817925DF1EDB0022C45E /* Chapter2LoopDetection.swift in Sources */,
 				E6C2509825E05A62006DFC1D /* Chapter3AnimalShelter.swift in Sources */,
+				E6C250AE25E1949D006DFC1D /* Chapter4MinimalTree.swift in Sources */,
 				E6C2508325E03F6E006DFC1D /* Chapter3QueueViaStacks.swift in Sources */,
 				E687817425DF0F550022C45E /* Chapter2Intersection.swift in Sources */,
 				E6C2509325E0511B006DFC1D /* QueueProtocol.swift in Sources */,
 				E687815625DEA88F0022C45E /* Chapter2RemoveDuplicates.swift in Sources */,
+				E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */,
 				E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */,
+				E6C250A925E17DC8006DFC1D /* Graph.swift in Sources */,
 				E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */,
+				E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */,
 				E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */,
+				E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */,
 				E687814025DD9E9F0022C45E /* Chapter1OneAway.swift in Sources */,
 				E687813B25DD775B0022C45E /* Chapter1PalindromePermutation.swift in Sources */,
 				E687818125E011CB0022C45E /* Stack.swift in Sources */,
+				E6C250B325E196CF006DFC1D /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

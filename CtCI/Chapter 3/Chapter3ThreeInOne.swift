@@ -13,11 +13,11 @@ class Chapter3ThreeInOne {
     static func threeInOne() {
         
         var s = Stack<Int>()
-        s.push(Node(data: 1))
-        s.push(Node(data: 2))
-        s.push(Node(data: 3))
-        s.push(Node(data: 4))
-        s.push(Node(data: 5))
+        s.push(LinkedNode(data: 1))
+        s.push(LinkedNode(data: 2))
+        s.push(LinkedNode(data: 3))
+        s.push(LinkedNode(data: 4))
+        s.push(LinkedNode(data: 5))
         print(s.stringValue)
   
         while s.isEmpty == false {
@@ -29,11 +29,11 @@ class Chapter3ThreeInOne {
         }
         
         var q = Queue<Int>()
-        q.add(Node(data: 1))
-        q.add(Node(data: 2))
-        q.add(Node(data: 3))
-        q.add(Node(data: 4))
-        q.add(Node(data: 5))
+        q.add(LinkedNode(data: 1))
+        q.add(LinkedNode(data: 2))
+        q.add(LinkedNode(data: 3))
+        q.add(LinkedNode(data: 4))
+        q.add(LinkedNode(data: 5))
         print(q.stringValue)
         
         while q.isEmpty == false {

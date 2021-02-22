@@ -12,12 +12,12 @@ class Chapter3SortedStack {
     static func test() -> Bool {
         
         var s = SortedStack<Int>()
-        s.push(Node(data: 0))
-        s.push(Node(data: 1))
-        s.push(Node(data: 5))
-        s.push(Node(data: 3))
-        s.push(Node(data: 2))
-        s.push(Node(data: 4))
+        s.push(LinkedNode(data: 0))
+        s.push(LinkedNode(data: 1))
+        s.push(LinkedNode(data: 5))
+        s.push(LinkedNode(data: 3))
+        s.push(LinkedNode(data: 2))
+        s.push(LinkedNode(data: 4))
         print(s.stringValue)
 
         return s.stringValue == "0>1>2>3>4>5>"
@@ -37,7 +37,7 @@ struct SortedStack<T: Hashable & Comparable & Equatable>: StackProtocol {
         return stack.stringValue
     }
     
-    mutating func push(_ node: Node<T>) {
+    mutating func push(_ node: LinkedNode<T>) {
         if isEmpty {
             stack.push(node)
         } else if let minimum = peek(), node.data <= minimum  {
@@ -55,7 +55,7 @@ struct SortedStack<T: Hashable & Comparable & Equatable>: StackProtocol {
         return stack.peek()
     }
     
-    private mutating func insert(_ node: Node<T>) {
+    private mutating func insert(_ node: LinkedNode<T>) {
         guard var value = peek() else {
             push(node)
             return
@@ -66,7 +66,7 @@ struct SortedStack<T: Hashable & Comparable & Equatable>: StackProtocol {
         // find the correct index
         while node.data > value && !isEmpty {
             if let v = pop() {
-                tempStack.push(Node(data: v))
+                tempStack.push(LinkedNode(data: v))
                 value = v
             } else {
                 break
@@ -79,7 +79,7 @@ struct SortedStack<T: Hashable & Comparable & Equatable>: StackProtocol {
         // add nodes back on top
         while !tempStack.isEmpty {
             if let value = tempStack.pop() {
-                push(Node(data: value))
+                push(LinkedNode(data: value))
             }
         }
         

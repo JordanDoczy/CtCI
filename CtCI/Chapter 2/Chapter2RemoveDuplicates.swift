@@ -9,11 +9,11 @@ import Foundation
 
 class Chapter2RemoveDuplicates {
     
-    static func removeDuplicates(from node: Node<Int>) -> Node<Int> {
+    static func removeDuplicates(from node: LinkedNode<Int>) -> LinkedNode<Int> {
 
         var map:[Int:Bool] = [:]
-        var current: Node<Int>? = node
-        var previous: Node<Int>? = current
+        var current: LinkedNode<Int>? = node
+        var previous: LinkedNode<Int>? = current
         
         while current != nil {
             if map[current!.data] == nil {
@@ -30,23 +30,23 @@ class Chapter2RemoveDuplicates {
     
     static func test() -> Bool {
 
-        let listNode = Node(data: 0)
-        listNode.next = Node(data: 1)
-        listNode.next!.next = Node(data: 2)
-        listNode.next!.next!.next = Node(data: 3)
-        listNode.next!.next!.next!.next = Node(data: 4)
-        listNode.next!.next!.next!.next!.next = Node(data: 3)
-        listNode.next!.next!.next!.next!.next!.next = Node(data: 5)
-        listNode.next!.next!.next!.next!.next!.next!.next = Node(data: 5)
-        listNode.next!.next!.next!.next!.next!.next!.next!.next = Node(data: 0)
+        let listNode = LinkedNode(data: 0)
+        listNode.next = LinkedNode(data: 1)
+        listNode.next!.next = LinkedNode(data: 2)
+        listNode.next!.next!.next = LinkedNode(data: 3)
+        listNode.next!.next!.next!.next = LinkedNode(data: 4)
+        listNode.next!.next!.next!.next!.next = LinkedNode(data: 3)
+        listNode.next!.next!.next!.next!.next!.next = LinkedNode(data: 5)
+        listNode.next!.next!.next!.next!.next!.next!.next = LinkedNode(data: 5)
+        listNode.next!.next!.next!.next!.next!.next!.next!.next = LinkedNode(data: 0)
         print("listNode= \(listNode.getStringValue())")
 
-        let resultNode = Node(data: 0)
-        resultNode.next = Node(data: 1)
-        resultNode.next!.next = Node(data: 2)
-        resultNode.next!.next!.next = Node(data: 3)
-        resultNode.next!.next!.next!.next = Node(data: 4)
-        resultNode.next!.next!.next!.next!.next = Node(data: 5)
+        let resultNode = LinkedNode(data: 0)
+        resultNode.next = LinkedNode(data: 1)
+        resultNode.next!.next = LinkedNode(data: 2)
+        resultNode.next!.next!.next = LinkedNode(data: 3)
+        resultNode.next!.next!.next!.next = LinkedNode(data: 4)
+        resultNode.next!.next!.next!.next!.next = LinkedNode(data: 5)
         print("resultNode= \(resultNode.getStringValue())")
         
         let removeDups = Chapter2RemoveDuplicates.removeDuplicates(from: listNode)

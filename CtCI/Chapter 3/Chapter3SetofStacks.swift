@@ -12,18 +12,18 @@ class Chapter3SetofStacks {
     static func test() -> Bool {
         
         var stackSet = StackSet<Int>(threshold: 5)
-        stackSet.push(Node(data: 1))
-        stackSet.push(Node(data: 2))
-        stackSet.push(Node(data: 3))
-        stackSet.push(Node(data: 4))
-        stackSet.push(Node(data: 5))
-        stackSet.push(Node(data: 6))
-        stackSet.push(Node(data: 7))
-        stackSet.push(Node(data: 8))
-        stackSet.push(Node(data: 9))
-        stackSet.push(Node(data: 10))
-        stackSet.push(Node(data: 11))
-        stackSet.push(Node(data: 12))
+        stackSet.push(LinkedNode(data: 1))
+        stackSet.push(LinkedNode(data: 2))
+        stackSet.push(LinkedNode(data: 3))
+        stackSet.push(LinkedNode(data: 4))
+        stackSet.push(LinkedNode(data: 5))
+        stackSet.push(LinkedNode(data: 6))
+        stackSet.push(LinkedNode(data: 7))
+        stackSet.push(LinkedNode(data: 8))
+        stackSet.push(LinkedNode(data: 9))
+        stackSet.push(LinkedNode(data: 10))
+        stackSet.push(LinkedNode(data: 11))
+        stackSet.push(LinkedNode(data: 12))
         
         print(stackSet.stringValue)
         print("-pop-")
@@ -89,7 +89,7 @@ struct StackSet<T: Hashable & Comparable>: StackProtocol {
 //        return value
 //    }
     
-    mutating func push(_ node: Node<T>) {
+    mutating func push(_ node: LinkedNode<T>) {
         itemCount += 1
         if Double(itemCount) / Double(threshold) > Double(stacks.count) {
             stacks.append(Stack<T>())

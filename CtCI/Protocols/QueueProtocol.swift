@@ -11,7 +11,7 @@ protocol QueueProtocol {
     associatedtype T: Hashable & Comparable & Equatable
     
     var isEmpty: Bool { get }
-    mutating func add(_ node: Node<T>)
+    mutating func add(_ node: LinkedNode<T>)
     mutating func remove() -> T?
     func peek() -> T?
 }

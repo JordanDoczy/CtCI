@@ -11,9 +11,8 @@ import SwiftUI
 struct CtCIApp: App {
     var body: some Scene {
         WindowGroup {
-            if Chapter3AnimalShelter.test() {
-            ContentView()
-            }
+//            TreeView(array: Chapter4MinimalTree.test())
+            LinkedListView(linkedLists: Chapter4ListofDepths.test())
         }
     }
 }

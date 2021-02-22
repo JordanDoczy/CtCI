@@ -14,12 +14,12 @@ class Chapter2Partition {
     // append lower items to the head
     // append higher items to the tail
     // combine head and tail
-    static func partition(node: Node<Int>, parition: Int) -> Node<Int> {
-        var head: Node<Int>? = nil
-        var headNext: Node<Int>? = nil
-        var tail: Node<Int>? = nil
-        var tailNext: Node<Int>? = nil
-        var n: Node<Int>? = node
+    static func partition(node: LinkedNode<Int>, parition: Int) -> LinkedNode<Int> {
+        var head: LinkedNode<Int>? = nil
+        var headNext: LinkedNode<Int>? = nil
+        var tail: LinkedNode<Int>? = nil
+        var tailNext: LinkedNode<Int>? = nil
+        var n: LinkedNode<Int>? = node
         
         while n != nil {
             let next = n!.next
@@ -53,13 +53,13 @@ class Chapter2Partition {
     }
     
     static func test() -> Bool {
-        let listNode = Node(data: 3)
-        listNode.next = Node(data: 5)
-        listNode.next!.next = Node(data: 8)
-        listNode.next!.next!.next = Node(data: 5)
-        listNode.next!.next!.next!.next = Node(data: 10)
-        listNode.next!.next!.next!.next!.next = Node(data: 2)
-        listNode.next!.next!.next!.next!.next!.next = Node(data: 1)
+        let listNode = LinkedNode(data: 3)
+        listNode.next = LinkedNode(data: 5)
+        listNode.next!.next = LinkedNode(data: 8)
+        listNode.next!.next!.next = LinkedNode(data: 5)
+        listNode.next!.next!.next!.next = LinkedNode(data: 10)
+        listNode.next!.next!.next!.next!.next = LinkedNode(data: 2)
+        listNode.next!.next!.next!.next!.next!.next = LinkedNode(data: 1)
         print("listNode= \(listNode.getStringValue())")
         
         //let partitionNode = partition(node: listNode, partition: 5)

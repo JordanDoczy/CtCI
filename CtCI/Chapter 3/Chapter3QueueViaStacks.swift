@@ -11,12 +11,12 @@ class Chapter3QueueViaStacks {
     
     static func test() -> Bool {
         var queue = QueueViaStacks<Int>()
-        queue.add(Node(data: 0))
-        queue.add(Node(data: 1))
-        queue.add(Node(data: 2))
-        queue.add(Node(data: 3))
+        queue.add(LinkedNode(data: 0))
+        queue.add(LinkedNode(data: 1))
+        queue.add(LinkedNode(data: 2))
+        queue.add(LinkedNode(data: 3))
         _ = queue.remove()
-        queue.add(Node(data: 3))
+        queue.add(LinkedNode(data: 3))
         
         // 1>2>3>3
         while queue.isEmpty == false {
@@ -39,7 +39,7 @@ struct QueueViaStacks<T: Hashable & Comparable & Equatable> {
         return stackLifo.isEmpty && stackFifo.isEmpty
     }
     
-    mutating func add(_ node: Node<T>) {
+    mutating func add(_ node: LinkedNode<T>) {
         stackLifo.push(node)
     }
     
@@ -66,7 +66,7 @@ struct QueueViaStacks<T: Hashable & Comparable & Equatable> {
     mutating private func reverseStack() {
         while stackLifo.isEmpty == false {
             if let data = stackLifo.pop() {
-                stackFifo.push(Node(data: data))
+                stackFifo.push(LinkedNode(data: data))
             }
         }
     }
