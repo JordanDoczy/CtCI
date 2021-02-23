@@ -11,16 +11,37 @@ class GraphNode<T: Hashable & Comparable & Equatable> {
     var data: T
     var time: Int
     var searched: Bool = false
-    private(set) var children: [GraphNode]
+    private(set) var children: Set<GraphNode>
     
     init(data: T) {
         self.data = data
         time = Int(mach_absolute_time())
-        children = []
+        children = Set<GraphNode>()
     }
     
     func addChild(_ node: GraphNode) {
-        children.append(node)
+        children.insert(node)
+    }
+    
+    func removeChild(_ node: GraphNode) {
+        children.remove(node)
+    }
+    
+    func hasLoop(_ node: GraphNode<T>?=nil) -> Bool {
+        
+        guard node != self else {
+            return true
+        }
+        
+        let ref = node == nil ? self : node
+        
+        for child in children {
+            if child.hasLoop(ref) {
+                return true
+            }
+        }
+        
+        return false
     }
 }
 

@@ -9,14 +9,32 @@ import Foundation
 
 class TreeNode<T: Hashable & Comparable & Equatable> {
     
-    var left: TreeNode?
-    var right: TreeNode?
+    weak var parent: TreeNode?
+    var left: TreeNode? {
+        didSet {
+            left?.parent = self
+        }
+    }
+    var right: TreeNode? {
+        didSet {
+            right?.parent = self
+        }
+    }
     var data: T
     var time: Int
     
     init(data: T) {
         self.data = data
         time = Int(mach_absolute_time())
+    }
+
+    static func maxDepth<T>(_ node: TreeNode<T>?) -> Int {
+        guard let node = node else {
+            return 0
+        }
+        let leftDepth = maxDepth(node.left) + 1
+        let rightDepth = maxDepth(node.right) + 1
+        return max(leftDepth, rightDepth)
     }
     
     static func printNodeDepthFirst<T>(_ node: TreeNode<T>?, prefix: String="") {

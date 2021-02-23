@@ -10,6 +10,10 @@
 		E60051EC25E4589900C9B4F4 /* Chapter4ListofDepths.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */; };
 		E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051F325E45D6600C9B4F4 /* GraphNode.swift */; };
 		E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */; };
+		E600520125E5389500C9B4F4 /* Chapter4CheckBalanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600520025E5389500C9B4F4 /* Chapter4CheckBalanced.swift */; };
+		E600520625E541D400C9B4F4 /* Chapter4ValidateBST.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600520525E541D400C9B4F4 /* Chapter4ValidateBST.swift */; };
+		E600520B25E552D300C9B4F4 /* Chapter4Successor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600520A25E552D300C9B4F4 /* Chapter4Successor.swift */; };
+		E600521025E5735300C9B4F4 /* Chapter4BuildOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600520F25E5735300C9B4F4 /* Chapter4BuildOrder.swift */; };
 		E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684521425DC6D0D006959B4 /* CtCIApp.swift */; };
 		E684521725DC6D0D006959B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684521625DC6D0D006959B4 /* ContentView.swift */; };
 		E684521925DC6D10006959B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E684521825DC6D10006959B4 /* Assets.xcassets */; };
@@ -73,6 +77,10 @@
 		E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4ListofDepths.swift; sourceTree = "<group>"; };
 		E60051F325E45D6600C9B4F4 /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
 		E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
+		E600520025E5389500C9B4F4 /* Chapter4CheckBalanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4CheckBalanced.swift; sourceTree = "<group>"; };
+		E600520525E541D400C9B4F4 /* Chapter4ValidateBST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4ValidateBST.swift; sourceTree = "<group>"; };
+		E600520A25E552D300C9B4F4 /* Chapter4Successor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4Successor.swift; sourceTree = "<group>"; };
+		E600520F25E5735300C9B4F4 /* Chapter4BuildOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4BuildOrder.swift; sourceTree = "<group>"; };
 		E684521125DC6D0D006959B4 /* CtCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CtCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E684521425DC6D0D006959B4 /* CtCIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CtCIApp.swift; sourceTree = "<group>"; };
 		E684521625DC6D0D006959B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -283,6 +291,10 @@
 				E6C250A025E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift */,
 				E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */,
 				E60051EB25E4589900C9B4F4 /* Chapter4ListofDepths.swift */,
+				E600520025E5389500C9B4F4 /* Chapter4CheckBalanced.swift */,
+				E600520525E541D400C9B4F4 /* Chapter4ValidateBST.swift */,
+				E600520A25E552D300C9B4F4 /* Chapter4Successor.swift */,
+				E600520F25E5735300C9B4F4 /* Chapter4BuildOrder.swift */,
 			);
 			path = "Chapter 4";
 			sourceTree = "<group>";
@@ -435,6 +447,8 @@
 				E6C2507925E021DB006DFC1D /* Chapter3StackMin.swift in Sources */,
 				E687816525DEBB080022C45E /* Chapter2Partition.swift in Sources */,
 				E684521725DC6D0D006959B4 /* ContentView.swift in Sources */,
+				E600520125E5389500C9B4F4 /* Chapter4CheckBalanced.swift in Sources */,
+				E600520B25E552D300C9B4F4 /* Chapter4Successor.swift in Sources */,
 				E60051EC25E4589900C9B4F4 /* Chapter4ListofDepths.swift in Sources */,
 				E6C250B825E1EA04006DFC1D /* TreeView.swift in Sources */,
 				E687814A25DDAFB50022C45E /* Chapter1RotateMatrix.swift in Sources */,
@@ -450,6 +464,7 @@
 				E6C2508325E03F6E006DFC1D /* Chapter3QueueViaStacks.swift in Sources */,
 				E687817425DF0F550022C45E /* Chapter2Intersection.swift in Sources */,
 				E6C2509325E0511B006DFC1D /* QueueProtocol.swift in Sources */,
+				E600521025E5735300C9B4F4 /* Chapter4BuildOrder.swift in Sources */,
 				E687815625DEA88F0022C45E /* Chapter2RemoveDuplicates.swift in Sources */,
 				E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */,
 				E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */,
@@ -457,6 +472,7 @@
 				E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */,
 				E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */,
 				E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */,
+				E600520625E541D400C9B4F4 /* Chapter4ValidateBST.swift in Sources */,
 				E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */,
 				E687814025DD9E9F0022C45E /* Chapter1OneAway.swift in Sources */,
 				E687813B25DD775B0022C45E /* Chapter1PalindromePermutation.swift in Sources */,

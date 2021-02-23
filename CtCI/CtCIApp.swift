@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct CtCIApp: App {
+    
+    
+    var message: String = Chapter4BuildOrder.test() ? "Complete" : "Incomplete"
+    
     var body: some Scene {
         WindowGroup {
-//            TreeView(array: Chapter4MinimalTree.test())
-            LinkedListView(linkedLists: Chapter4ListofDepths.test())
+//            TreeView(array: getTree())
+//            LinkedListView(linkedLists: Chapter4ListofDepths.test())
+            ContentView(message: message)
         }
     }
 }
