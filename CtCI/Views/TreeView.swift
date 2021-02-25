@@ -26,7 +26,7 @@ struct TreeView: View {
                     ForEach(array[i], id: \.self) { number in
                         let str = number != nil ? "\(number!)" : "-"
                         Text("\(str)")
-                            .frame(width: 12, height: 12, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 15, height: 15, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(10)
                             .overlay(Circle().stroke(Color.gray, lineWidth: 1))
                     }

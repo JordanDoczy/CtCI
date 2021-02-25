@@ -15,8 +15,9 @@ class TreeNode<T: Hashable & Comparable & Equatable> {
     
     /// Storage
     var data: T
-    private(set) var size = 0
+    private(set) var size = 1
     var time: Int
+    var canSearch: Bool = true
     
     /// Computed properties
     var direction: TreeDirection? {
@@ -81,21 +82,96 @@ class TreeNode<T: Hashable & Comparable & Equatable> {
     }
     
     func findNode(with value: T) -> TreeNode? {
-        return TreeNode.findNode(from: self, with: value)
+        if data == value { return self }
+
+        if let left = left?.findNode(with: value) {
+            return left
+        }
+
+        if let right = right?.findNode(with: value) {
+            return right
+        }
+        
+        return nil
+    }
+    
+    func getChildren() -> [TreeNode] {
+        
+        var children: [TreeNode] = []
+        
+        if let left = left {
+            children.append(left)
+            children += left.getChildren()
+        }
+        if let right = right {
+            children.append(right)
+            children += right.getChildren()
+        }
+
+        return children
+    }
+    
+    func getNode(at index: Int) -> TreeNode? {
+        guard index >= 0 else { return nil }
+        
+        let leftSize = left?.size ?? 0
+        
+        if index == leftSize { return self }
+        else if index < leftSize { return left!.getNode(at: index) }
+        else { return right?.getNode(at: index - leftSize - 1) }
     }
     
     func getLeaves() -> [TreeNode] {
-        return TreeNode.getLeaves(from: self)
+        if isLeaf { return [self] }
+        
+        var result: [TreeNode] = []
+        result += left?.getLeaves() ?? []
+        result += right?.getLeaves() ?? []
+        
+        return result
     }
     
     func getMaxDepth() -> Int {
-        return TreeNode.getMaxDepth(at: self)
+        let leftDepth = (left?.getMaxDepth() ?? 0) + 1
+        let rightDepth = (right?.getMaxDepth() ?? 0) + 1
+        return max(leftDepth, rightDepth)
     }
 
     func getValuesBFS() -> [[T?]] {
         return TreeNode.getValuesBFS(nodes: [self])
     }
     
+    func countPaths(for value: Int) -> Int {
+        return countPaths(for: value, originalValue: value)
+    }
+    
+    private func countPaths(for value: Int, originalValue: Int, path: [Int] = []) -> Int {
+        //print("node=\(data), searching for \(value), my parent=\(parent?.data)")
+        
+        guard let myValue = data as? Int else { return 0 }
+        
+        
+        if path.isEmpty { canSearch = false }
+        
+        var paths = 0
+        var path = path // make mutable
+        path.append(myValue)
+
+        if value == myValue { // we have found a path
+            print("found path: \(path)")
+            paths += 1
+        }
+        if let left = left { // check continuation and starting from here
+            paths += left.countPaths(for: value-myValue, originalValue: originalValue, path: path)
+            if left.canSearch { paths += left.countPaths(for: originalValue, originalValue: originalValue, path: []) }
+        }
+        if let right = right { // check continuation and starting from here
+            paths += right.countPaths(for: value-myValue, originalValue: originalValue, path: path)
+            if right.canSearch { paths += right.countPaths(for: originalValue, originalValue: originalValue, path: []) }
+        }
+        
+        return paths
+    }
 }
 
 /// Static functions
@@ -114,46 +190,6 @@ extension TreeNode {
         return root
     }
     
-    static func findNode(from root: TreeNode?, with value: T) -> TreeNode? {
-        guard let root = root else { return nil }
-        if root.data == value { return root }
-
-        if let left = findNode(from: root.left, with: value) {
-            return left
-        }
-
-        if let right = findNode(from: root.right, with: value) {
-            return right
-        }
-        
-        return nil
-    }
-    
-    static func getLeaves(from node: TreeNode?) -> [TreeNode] {
-        guard let node = node else {
-            return []
-        }
-        
-        if node.isLeaf {
-            return [node]
-        }
-        
-        var result: [TreeNode] = []
-        result += getLeaves(from: node.left)
-        result += getLeaves(from: node.right)
-        
-        return result
-    }
-    
-    static func getMaxDepth<T>(at node: TreeNode<T>?) -> Int {
-        guard let node = node else {
-            return 0
-        }
-        let leftDepth = getMaxDepth(at: node.left) + 1
-        let rightDepth = getMaxDepth(at: node.right) + 1
-        return max(leftDepth, rightDepth)
-    }
-
     static func getValuesBFS<T>(nodes: [TreeNode<T>?]) -> [[T?]] {
         guard nodes.count > 0 else {
             return []

@@ -27,6 +27,7 @@
 		E685F1F725E6A87B0030C895 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F1F625E6A87B0030C895 /* BinarySearchTree.swift */; };
 		E685F20225E6D6950030C895 /* Chapter4CheckSubtree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */; };
 		E685F20725E6ED5C0030C895 /* Chapter4RandomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */; };
+		E685F20C25E802370030C895 /* Chapter4PathsWithSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F20B25E802370030C895 /* Chapter4PathsWithSum.swift */; };
 		E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687812625DD6A9E0022C45E /* Chapter1CheckPermutation.swift */; };
 		E687812C25DD6D230022C45E /* Chapter1CheckPermutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687812B25DD6D230022C45E /* Chapter1CheckPermutationTests.swift */; };
 		E687813125DD6F800022C45E /* Chapter1ReplaceSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687813025DD6F800022C45E /* Chapter1ReplaceSpaces.swift */; };
@@ -105,6 +106,7 @@
 		E685F1F625E6A87B0030C895 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4CheckSubtree.swift; sourceTree = "<group>"; };
 		E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4RandomNode.swift; sourceTree = "<group>"; };
+		E685F20B25E802370030C895 /* Chapter4PathsWithSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4PathsWithSum.swift; sourceTree = "<group>"; };
 		E687812625DD6A9E0022C45E /* Chapter1CheckPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1CheckPermutation.swift; sourceTree = "<group>"; };
 		E687812B25DD6D230022C45E /* Chapter1CheckPermutationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1CheckPermutationTests.swift; sourceTree = "<group>"; };
 		E687813025DD6F800022C45E /* Chapter1ReplaceSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1ReplaceSpaces.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				E685F1EE25E6A7360030C895 /* Chapter4BSTSequence.swift */,
 				E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */,
 				E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */,
+				E685F20B25E802370030C895 /* Chapter4PathsWithSum.swift */,
 			);
 			path = "Chapter 4";
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */,
 				E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */,
 				E6C250A925E17DC8006DFC1D /* Graph.swift in Sources */,
+				E685F20C25E802370030C895 /* Chapter4PathsWithSum.swift in Sources */,
 				E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */,
 				E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */,
 				E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */,

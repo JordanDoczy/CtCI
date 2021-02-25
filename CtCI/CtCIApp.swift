@@ -12,10 +12,10 @@ struct CtCIApp: App {
     
     
     
-    var message: String = Chapter4RandomNode.test() ? "Complete" : "Incomplete"
+    var message: String = Chapter4PathsWithSum.test() ? "Complete" : "Incomplete"
     
     func getArray() -> [[Int?]] {
-        let tree = Chapter4RandomNode.getTree()
+        let tree = Chapter4PathsWithSum.getTree()
         return tree.getValuesBFS()
     }
     

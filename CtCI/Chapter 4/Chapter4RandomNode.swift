@@ -9,40 +9,22 @@ import Foundation
 
 class Chapter4RandomNode {
     
-    
     static func getRandomNode<T>(from root: TreeNode<T>) -> TreeNode<T> {
-        
-        var allNodes = [root]
-        var nodesAtLevel = [root]
+        let randomIndex = Int.random(in: 0..<root.size) // get random index based on tree size
+        return root.getNode(at: randomIndex) ?? root // find node at index
+    }
+    
+    static func getRandomNodeSimple<T>(from root: TreeNode<T>) -> TreeNode<T> {
+        let allNodes = [root] + root.getChildren() // get array of children
+        return allNodes.randomElement()! // return random element
+    }
 
-        while !nodesAtLevel.isEmpty {
-            nodesAtLevel = getChildren(from: nodesAtLevel)
-            allNodes += nodesAtLevel
-        }
-            
-        return allNodes.randomElement()!
-    }
-    
-    static func getChildren<T>(from nodes: [TreeNode<T>]) -> [TreeNode<T>] {
-        
-        var children: [TreeNode<T>] = []
-        for node in nodes {
-            if let left = node.left {
-                children.append(left)
-            }
-            if let right = node.right {
-                children.append(right)
-            }
-        }
-        
-        return children
-    }
-    
     static func test() -> Bool {
         let tree = getTree()
+        
         var map:[Int:Int] = [:]
 
-        for _ in 0..<1000{
+        for _ in 0..<1{
             let randomNode = getRandomNode(from: tree)
             if map[randomNode.data] == nil {
                 map[randomNode.data] = 0
