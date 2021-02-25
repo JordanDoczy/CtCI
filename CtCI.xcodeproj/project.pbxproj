@@ -22,6 +22,11 @@
 		E684523225DC6D11006959B4 /* CtCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684523125DC6D11006959B4 /* CtCIUITests.swift */; };
 		E684524425DC6DE9006959B4 /* Chapter1IsUnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684524325DC6DE9006959B4 /* Chapter1IsUnique.swift */; };
 		E684524925DC7050006959B4 /* Chapter1IsUniqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684524825DC7050006959B4 /* Chapter1IsUniqueTests.swift */; };
+		E685F1E725E68CA70030C895 /* Chapter4FirstCommonAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F1E625E68CA70030C895 /* Chapter4FirstCommonAncestor.swift */; };
+		E685F1EF25E6A7360030C895 /* Chapter4BSTSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F1EE25E6A7360030C895 /* Chapter4BSTSequence.swift */; };
+		E685F1F725E6A87B0030C895 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F1F625E6A87B0030C895 /* BinarySearchTree.swift */; };
+		E685F20225E6D6950030C895 /* Chapter4CheckSubtree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */; };
+		E685F20725E6ED5C0030C895 /* Chapter4RandomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */; };
 		E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687812625DD6A9E0022C45E /* Chapter1CheckPermutation.swift */; };
 		E687812C25DD6D230022C45E /* Chapter1CheckPermutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687812B25DD6D230022C45E /* Chapter1CheckPermutationTests.swift */; };
 		E687813125DD6F800022C45E /* Chapter1ReplaceSpaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = E687813025DD6F800022C45E /* Chapter1ReplaceSpaces.swift */; };
@@ -95,6 +100,11 @@
 		E684523325DC6D11006959B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E684524325DC6DE9006959B4 /* Chapter1IsUnique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1IsUnique.swift; sourceTree = "<group>"; };
 		E684524825DC7050006959B4 /* Chapter1IsUniqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1IsUniqueTests.swift; sourceTree = "<group>"; };
+		E685F1E625E68CA70030C895 /* Chapter4FirstCommonAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4FirstCommonAncestor.swift; sourceTree = "<group>"; };
+		E685F1EE25E6A7360030C895 /* Chapter4BSTSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4BSTSequence.swift; sourceTree = "<group>"; };
+		E685F1F625E6A87B0030C895 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4CheckSubtree.swift; sourceTree = "<group>"; };
+		E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4RandomNode.swift; sourceTree = "<group>"; };
 		E687812625DD6A9E0022C45E /* Chapter1CheckPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1CheckPermutation.swift; sourceTree = "<group>"; };
 		E687812B25DD6D230022C45E /* Chapter1CheckPermutationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1CheckPermutationTests.swift; sourceTree = "<group>"; };
 		E687813025DD6F800022C45E /* Chapter1ReplaceSpaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1ReplaceSpaces.swift; sourceTree = "<group>"; };
@@ -238,6 +248,7 @@
 		E687814E25DEA7B60022C45E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E685F1F625E6A87B0030C895 /* BinarySearchTree.swift */,
 				E6C250A825E17DC8006DFC1D /* Graph.swift */,
 				E6C2507325E01651006DFC1D /* Queue.swift */,
 				E687818025E011CB0022C45E /* Stack.swift */,
@@ -295,6 +306,10 @@
 				E600520525E541D400C9B4F4 /* Chapter4ValidateBST.swift */,
 				E600520A25E552D300C9B4F4 /* Chapter4Successor.swift */,
 				E600520F25E5735300C9B4F4 /* Chapter4BuildOrder.swift */,
+				E685F1E625E68CA70030C895 /* Chapter4FirstCommonAncestor.swift */,
+				E685F1EE25E6A7360030C895 /* Chapter4BSTSequence.swift */,
+				E685F20125E6D6950030C895 /* Chapter4CheckSubtree.swift */,
+				E685F20625E6ED5C0030C895 /* Chapter4RandomNode.swift */,
 			);
 			path = "Chapter 4";
 			sourceTree = "<group>";
@@ -438,8 +453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E685F1F725E6A87B0030C895 /* BinarySearchTree.swift in Sources */,
 				E687816A25DEC67C0022C45E /* Chapter2SumLists.swift in Sources */,
 				E6C2507425E01651006DFC1D /* Queue.swift in Sources */,
+				E685F1E725E68CA70030C895 /* Chapter4FirstCommonAncestor.swift in Sources */,
 				E6C2508E25E04FF2006DFC1D /* StructProtocol.swift in Sources */,
 				E684524425DC6DE9006959B4 /* Chapter1IsUnique.swift in Sources */,
 				E687815025DEA8020022C45E /* LinkedNode.swift in Sources */,
@@ -472,9 +489,12 @@
 				E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */,
 				E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */,
 				E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */,
+				E685F20225E6D6950030C895 /* Chapter4CheckSubtree.swift in Sources */,
 				E600520625E541D400C9B4F4 /* Chapter4ValidateBST.swift in Sources */,
 				E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */,
 				E687814025DD9E9F0022C45E /* Chapter1OneAway.swift in Sources */,
+				E685F1EF25E6A7360030C895 /* Chapter4BSTSequence.swift in Sources */,
+				E685F20725E6ED5C0030C895 /* Chapter4RandomNode.swift in Sources */,
 				E687813B25DD775B0022C45E /* Chapter1PalindromePermutation.swift in Sources */,
 				E687818125E011CB0022C45E /* Stack.swift in Sources */,
 				E6C250B325E196CF006DFC1D /* TreeNode.swift in Sources */,

@@ -20,8 +20,8 @@ class Chapter4CheckBalanced {
         tree.left!.right!.right!.left = TreeNode(data: 5)
         tree.right = TreeNode(data: 12)
         
-        let leftDepth = TreeNode<Int>.maxDepth(tree.left)
-        let rightDepth = TreeNode<Int>.maxDepth(tree.right)
+        let leftDepth = tree.left!.getMaxDepth()
+        let rightDepth = tree.right!.getMaxDepth()
         print("leftDepth= \(leftDepth); rightDepth= \(rightDepth);")
         
         return abs(leftDepth - rightDepth) <= 1

@@ -9,8 +9,15 @@ import SwiftUI
 
 struct TreeView: View {
     
-    let array:[[Int?]]
     var spacer: CGFloat = 150.0
+    
+    @State var array:[[Int?]]
+    @State var count = 0
+    
+    static func getString(from arrays:[[Int]], at count: Int) -> String {
+        let values = arrays[count]
+        return "\(count): \(values)"
+    }
     
     var body: some View {
         VStack{
@@ -27,6 +34,7 @@ struct TreeView: View {
             }
         }
         .font(.custom("System", size: 10))
+        .padding()
     }
 }
 

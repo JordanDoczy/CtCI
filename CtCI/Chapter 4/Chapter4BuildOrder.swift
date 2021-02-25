@@ -40,7 +40,7 @@ class Chapter4BuildOrder {
             let compare = compareNode != nil ? compareNode : node
             
             for child in node.children {
-                if child.hasLoop() { 
+                if child.hasLoop() {
                     throw NSError(domain: "No valid build, dependency loop for child \(child.data)", code: 1)
                 }
                 if !isBuilt(node: node) {

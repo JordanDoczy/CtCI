@@ -26,8 +26,7 @@ class Chapter4MinimalTree {
     static func test() -> [[Int?]] {
         let data = [0,1,2,3,4,5,6,7,8,9,10]
         let tree: TreeNode<Int>? = createMinimalTree(data)
-        TreeNode<Int>.printNodeDepthFirst(tree, prefix: "root: ")
-        let values = TreeNode<Int>.getValuesBreadthFirst(nodes: [tree])
+        let values = tree!.getValuesBFS()
         print(values)
         return values
     }

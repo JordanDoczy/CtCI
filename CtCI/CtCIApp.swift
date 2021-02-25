@@ -11,13 +11,18 @@ import SwiftUI
 struct CtCIApp: App {
     
     
-    var message: String = Chapter4BuildOrder.test() ? "Complete" : "Incomplete"
+    
+    var message: String = Chapter4RandomNode.test() ? "Complete" : "Incomplete"
+    
+    func getArray() -> [[Int?]] {
+        let tree = Chapter4RandomNode.getTree()
+        return tree.getValuesBFS()
+    }
     
     var body: some Scene {
         WindowGroup {
-//            TreeView(array: getTree())
-//            LinkedListView(linkedLists: Chapter4ListofDepths.test())
-            ContentView(message: message)
+            TreeView(array: getArray())
+//            ContentView(message: message)
         }
     }
 }
