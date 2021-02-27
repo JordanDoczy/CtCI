@@ -60,6 +60,8 @@
 		E6C250AE25E1949D006DFC1D /* Chapter4MinimalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */; };
 		E6C250B325E196CF006DFC1D /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250B225E196CF006DFC1D /* TreeNode.swift */; };
 		E6C250B825E1EA04006DFC1D /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C250B725E1EA04006DFC1D /* TreeView.swift */; };
+		E6D07B1725EAA8B700DAD2B5 /* Chapter5Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B1625EAA8B700DAD2B5 /* Chapter5Insertion.swift */; };
+		E6D07B1C25EACC6800DAD2B5 /* Chapter5BinaryToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		E6C250AD25E1949D006DFC1D /* Chapter4MinimalTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4MinimalTree.swift; sourceTree = "<group>"; };
 		E6C250B225E196CF006DFC1D /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		E6C250B725E1EA04006DFC1D /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		E6D07B1625EAA8B700DAD2B5 /* Chapter5Insertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5Insertion.swift; sourceTree = "<group>"; };
+		E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5BinaryToString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 				E687815425DEA85C0022C45E /* Chapter 2 */,
 				E6C2506A25E01409006DFC1D /* Chapter 3 */,
 				E6C2509F25E17D7A006DFC1D /* Chapter 4 */,
+				E6D07B1525EAA89900DAD2B5 /* Chapter 5 */,
 				E684521A25DC6D10006959B4 /* Preview Content */,
 			);
 			path = CtCI;
@@ -325,6 +330,15 @@
 				E60051FB25E45EFA00C9B4F4 /* LinkedListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E6D07B1525EAA89900DAD2B5 /* Chapter 5 */ = {
+			isa = PBXGroup;
+			children = (
+				E6D07B1625EAA8B700DAD2B5 /* Chapter5Insertion.swift */,
+				E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */,
+			);
+			path = "Chapter 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,10 +499,12 @@
 				E687817425DF0F550022C45E /* Chapter2Intersection.swift in Sources */,
 				E6C2509325E0511B006DFC1D /* QueueProtocol.swift in Sources */,
 				E600521025E5735300C9B4F4 /* Chapter4BuildOrder.swift in Sources */,
+				E6D07B1725EAA8B700DAD2B5 /* Chapter5Insertion.swift in Sources */,
 				E687815625DEA88F0022C45E /* Chapter2RemoveDuplicates.swift in Sources */,
 				E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */,
 				E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */,
 				E6C250A925E17DC8006DFC1D /* Graph.swift in Sources */,
+				E6D07B1C25EACC6800DAD2B5 /* Chapter5BinaryToString.swift in Sources */,
 				E685F20C25E802370030C895 /* Chapter4PathsWithSum.swift in Sources */,
 				E684521525DC6D0D006959B4 /* CtCIApp.swift in Sources */,
 				E60051FC25E45EFA00C9B4F4 /* LinkedListView.swift in Sources */,

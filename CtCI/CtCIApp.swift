@@ -9,20 +9,12 @@ import SwiftUI
 
 @main
 struct CtCIApp: App {
-    
-    
-    
-    var message: String = Chapter4PathsWithSum.test() ? "Complete" : "Incomplete"
-    
-    func getArray() -> [[Int?]] {
-        let tree = Chapter4PathsWithSum.getTree()
-        return tree.getValuesBFS()
-    }
+
+    var message: String = Chapter5BinaryToString.test() ? "Success" : "Failed"
     
     var body: some Scene {
         WindowGroup {
-            TreeView(array: getArray())
-//            ContentView(message: message)
+            ContentView(message: message)
         }
     }
 }
