@@ -64,6 +64,9 @@
 		E6D07B1C25EACC6800DAD2B5 /* Chapter5BinaryToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */; };
 		E6D07B2125EBE23200DAD2B5 /* Chapter5FlipBitToWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B2025EBE23200DAD2B5 /* Chapter5FlipBitToWin.swift */; };
 		E6D07B2625EBFA2C00DAD2B5 /* Chapter5NextNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B2525EBFA2C00DAD2B5 /* Chapter5NextNumber.swift */; };
+		E6D07B2B25EC55DD00DAD2B5 /* Chapter5Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B2A25EC55DD00DAD2B5 /* Chapter5Conversion.swift */; };
+		E6D07B3025EC67FF00DAD2B5 /* Chapter5PairwiseSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B2F25EC67FF00DAD2B5 /* Chapter5PairwiseSwap.swift */; };
+		E6D07B3525EC734D00DAD2B5 /* Chapter5DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D07B3425EC734D00DAD2B5 /* Chapter5DrawLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,9 @@
 		E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5BinaryToString.swift; sourceTree = "<group>"; };
 		E6D07B2025EBE23200DAD2B5 /* Chapter5FlipBitToWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5FlipBitToWin.swift; sourceTree = "<group>"; };
 		E6D07B2525EBFA2C00DAD2B5 /* Chapter5NextNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5NextNumber.swift; sourceTree = "<group>"; };
+		E6D07B2A25EC55DD00DAD2B5 /* Chapter5Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5Conversion.swift; sourceTree = "<group>"; };
+		E6D07B2F25EC67FF00DAD2B5 /* Chapter5PairwiseSwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5PairwiseSwap.swift; sourceTree = "<group>"; };
+		E6D07B3425EC734D00DAD2B5 /* Chapter5DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5DrawLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +349,9 @@
 				E6D07B1B25EACC6800DAD2B5 /* Chapter5BinaryToString.swift */,
 				E6D07B2025EBE23200DAD2B5 /* Chapter5FlipBitToWin.swift */,
 				E6D07B2525EBFA2C00DAD2B5 /* Chapter5NextNumber.swift */,
+				E6D07B2A25EC55DD00DAD2B5 /* Chapter5Conversion.swift */,
+				E6D07B2F25EC67FF00DAD2B5 /* Chapter5PairwiseSwap.swift */,
+				E6D07B3425EC734D00DAD2B5 /* Chapter5DrawLine.swift */,
 			);
 			path = "Chapter 5";
 			sourceTree = "<group>";
@@ -489,6 +498,7 @@
 				E687816525DEBB080022C45E /* Chapter2Partition.swift in Sources */,
 				E684521725DC6D0D006959B4 /* ContentView.swift in Sources */,
 				E600520125E5389500C9B4F4 /* Chapter4CheckBalanced.swift in Sources */,
+				E6D07B2B25EC55DD00DAD2B5 /* Chapter5Conversion.swift in Sources */,
 				E600520B25E552D300C9B4F4 /* Chapter4Successor.swift in Sources */,
 				E60051EC25E4589900C9B4F4 /* Chapter4ListofDepths.swift in Sources */,
 				E6C250B825E1EA04006DFC1D /* TreeView.swift in Sources */,
@@ -509,6 +519,7 @@
 				E600521025E5735300C9B4F4 /* Chapter4BuildOrder.swift in Sources */,
 				E6D07B1725EAA8B700DAD2B5 /* Chapter5Insertion.swift in Sources */,
 				E687815625DEA88F0022C45E /* Chapter2RemoveDuplicates.swift in Sources */,
+				E6D07B3525EC734D00DAD2B5 /* Chapter5DrawLine.swift in Sources */,
 				E6C250A125E17D8E006DFC1D /* Chapter4RouteBetweenNodes.swift in Sources */,
 				E687815B25DEB0890022C45E /* Chapter2ReturnKthToLast.swift in Sources */,
 				E6C250A925E17DC8006DFC1D /* Graph.swift in Sources */,
@@ -519,6 +530,7 @@
 				E687812725DD6A9E0022C45E /* Chapter1CheckPermutation.swift in Sources */,
 				E685F20225E6D6950030C895 /* Chapter4CheckSubtree.swift in Sources */,
 				E600520625E541D400C9B4F4 /* Chapter4ValidateBST.swift in Sources */,
+				E6D07B3025EC67FF00DAD2B5 /* Chapter5PairwiseSwap.swift in Sources */,
 				E60051F425E45D6600C9B4F4 /* GraphNode.swift in Sources */,
 				E687814025DD9E9F0022C45E /* Chapter1OneAway.swift in Sources */,
 				E685F1EF25E6A7360030C895 /* Chapter4BSTSequence.swift in Sources */,

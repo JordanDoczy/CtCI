@@ -36,17 +36,8 @@ class Chapter5BinaryToString {
     }
     
     static func test() -> Bool {
-
-        
-        
-        
-        
         let intValue = 4294967
         let value  = 0.4294967
-        //print("\(value) \(value.exponent) \(pow(value, Double(value.exponent)))")
-        
-        return false
-        print(Double(intValue).exponent)
         let result = binaryToString(value)
         print("result= \(result) value= \(value), binary=.\(String(intValue, radix: 2))")
 

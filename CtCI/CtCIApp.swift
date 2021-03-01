@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CtCIApp: App {
 
-    var message: String = Chapter5NextNumber.runTests() ? "Success" : "Failed"
+    var message: String = Chapter5DrawLine.runTest() ? "Success" : "Failed"
     
     var body: some Scene {
         WindowGroup {
